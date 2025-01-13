@@ -11,10 +11,7 @@ sbmtbutton.addEventListener("click",function(event){
     let y=pwd.value;
 // console.log(y)
     if(x && y){
-    //    x.value=" ";
-    //    console.log(x)
-    //    y.value=" ";
-    //    console.log(y)
+   
        alert("username and password successfully submited")
        
     }
