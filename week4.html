@@ -1,78 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="week4.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week4Hw</title>
 </head>
-<style>
-label{
-    margin-right: 20px;
-}
-</style>
+<!-- <style>
+    label {
+        margin-right: 20px;
+    }
+</style> -->
+
+
+<body>
     <div class="parent">
-    <h1>My Blog Page</h1>
-    <div class="center">
-    <ul class="center">
-        <li class="center"><a href="https://www.myglobalviewpoint.com/about/">About</a></li>
-        <li class="center"><a href="https://www.myglobalviewpoint.com/">Information</a></li>
-        <li class="center"><a href="https://www.myglobalviewpoint.com/contact/">Contact</a></li>
-        <li class="center">Help</li>
+        <div class="container">
+            <div class="h1">
+                <h1>My WebPage</h1>
+            </div>
+            <div class="top">
+                <!-- <p>this is top</p> -->
 
-</ul>
-</div>
-    <body>
-        
-        <div class="test">
+                <div class="logo">
+                    <img src="back.jpg" alt="logo" width="100px" height="130px">
+                </div>
+                <div class="para">
+                    <p>The sunset is a breathtaking moment when the sky transforms into a tapestry of warm colors, 
+                        from deep oranges to soft pinks and purples. As the sun dips below the horizon, 
+                        the air cools and the world feels quieter, inviting reflection. Shadows grow longer, 
+                        and the landscape takes on a serene, almost magical quality. Birds return to their nests, 
+                        silhouetted against the fading light, while the peaceful stillness of dusk sets in. 
+                        Each sunset is unique, offering a moment to pause and appreciate nature's beauty. 
+                        As the last light fades, the transition to night feels both comforting and eternal.</p>
 
-            <!-- <p >This is my first Html and Css webpage</p>
-            <label for="name"> name</label>
+                </div>
+
+                <div class="register">
+                    <!-- <P>login</P> -->
+                    <button class="add">signin</button>
+                </div>
+
+            </div>
+            <div class="anchors">
+                <!-- <P>Links</P> -->
+                <div class="center">
+                    <ul class="center">
+                        <li class="center"><a href="https://www.myglobalviewpoint.com/about/">About</a></li>
+                        <li class="center"><a href="https://www.myglobalviewpoint.com/">Information</a></li>
+                        <li class="center"><a href="https://www.myglobalviewpoint.com/contact/">Contact</a></li>
+                        <!-- <li class="center">Help</li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="test"> -->
+
+        <!-- <p >This is my first Html and Css webpage</p> -->
+        <!-- <label for="name"> name</label>
             <input type="text" id="name" placeholder="enter your name here"><br>
             <label for="password">password</label>
             <input type="password" name="password" id="password" placeholder="enter your password"><br> -->
 
-        </div>
-        <div class="images">
-            <p>Sign up</p>
-            <p >Sign up here if you don't have an account</p>
-            <label for="Name"> Name:</label>
-            <input type="text" id="Name" placeholder="enter your name here"><br>
-            <label for="password">password:</label>
-            <input type="password" name="password" id="password" placeholder="enter your password"><br>
-            <div class="button">
-<button type="button" id="submit"> submit</button>
-<button type="button" id="remove"> remove</button>
-<button type="button" id="edit"> edit</button>
-            </div>
-            <div class="image2">
-<div class="column">
-    <img src="sunrise-6922265_1280.jpg" alt="sunrise photo" width="50px"/>
-</div>
-            <div class="col1">
-                <img src="path-4591121_640.jpg" alt="path photo" width="50px"/>
-            </div>
+        <!-- </div> -->
+        <div class="collection">
+
+            <div class="image1">
+                <form id="loginForm" onsubmit="return handleSubmit()">
+                <label for="name"> username:</label>
+                <input type="text" id="name" placeholder="enter your name here"><br>
+                <label for="pswd">password:</label>
+                <input type="password" name="password" id="pswd" placeholder="enter your password"><br>
+            </form>
+                <div class="button">
+                    <button type="button" id="submit" > submit</button>
+                    <button type="button" id="remove" > remove</button>
+                    <ul id="list"></ul>
+                    <!-- <button type="button" id="edit"> edit</button> -->
+                </div>
            
-            <div class="row">
-                <img src="nature-3082832_1280.jpg" alt="nature photo" width="50px"/>
             </div>
-            
-            <div class="col2">
-                <img src="forest-72206_640.jpg" alt="forest photo" width="50px"/>
-            </div>
-            <div class="row1">
-                <img src="animal-4761847_1280.jpg" alt="animal photo" width="50px"/> 
-            </div>
-            <div class="col3">
-            <img src="animal-4761847_1280.jpg" alt="animal photo" width="50px"/>
+            <div class="pic">
+                <!-- <p></p> -->
+                <div class="image2" >
+
+                    <img  id="img"src="sunrise-6922265_1280.jpg" alt="sunrise photo" width="50px" />
+
+
+                    <img  id="img" src="path-4591121_640.jpg" alt="path photo" width="50px" />
+
+
+                    <img id="img" src="nature-3082832_1280.jpg" alt="nature photo" width="50px" />
+
+                    <img id="img" src="forest-72206_640.jpg" alt="forest photo" width="50px" />
+
+
+                    <img id="img" src="animal-4761847_1280.jpg" alt="animal photo" width="50px" />
+
+
+                    <img id="img" src="animal-4761847_1280.jpg" alt="animal photo" width="50px" />
+                </div>
             </div>
         </div>
-            <!-- <div class="image2"><img src="Rahwa.jpg" alt="rahwas photo" width="50px"/></div> -->
-    <div class="end">
-            <footer>
-        <p>&copy.made by me.</p>
-    </footer>
+
+        <!-- </div> -->
+        <!-- <div class="image2"><img src="Rahwa.jpg" alt="rahwas photo" width="50px"/></div> -->
+        <div class="end">
+            <div class="ftop">
+                <p>All rights reserved &#xA9; 2025 MyWebpage.</p>
+                
+            </div>
+        </div>
     </div>
-</div>
+    <script src="script5.js"></script>
+    </div>
 </body>
+
 </html>
